@@ -74,6 +74,46 @@ func setupVehicleArray() {
     vehicles.append(prius)
         
     
+    // create another car
+    var models = Car()
+    models.brandName = "Tesla"
+    models.modelName = "Model S"
+    models.modelYear = 2014
+    models.isConvertible = false
+    models.isHatchback = false
+    models.hasSunroof = true
+    models.numberOfDoors = 4
+    models.powerSource = "electric engine"
+    
+    // adding it
+    
+    vehicles.append(models)
+    
+    
+    // first motorcycle
+    var harley = Motorcycle()
+    harley.brandName = "Harley-Davidson"
+    harley.modelName = "Softail"
+    harley.modelYear = 1979
+    harley.engineNoise = "Vrrrrrroooooooom!"
+    
+    // adding it
+    
+    vehicles.append(harley)
+    
+    
+    //another motorcycle
+    var kawasaki = Motorcycle()
+    kawasaki.brandName = "Kawasaki"
+    kawasaki.modelName = "Ninja"
+    kawasaki.modelYear = 2005
+    kawasaki.engineNoise = "NEEEEeeeeeoooooW!"
+    
+    //adding it
+    
+    vehicles.append(kawasaki)
+    
+    
     // sort by model year
     vehicles.sort { $0.modelYear < $1.modelYear }
 
@@ -105,7 +145,7 @@ func setupVehicleArray() {
     let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as UITableViewCell
     
     let vehicle = vehicles[indexPath.row] as Vehicle
-    cell.textLabel?.text = "\(vehicle)"
+    cell.textLabel?.text = vehicle.vehicleTitle
     return cell
   }
 }

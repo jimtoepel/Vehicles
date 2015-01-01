@@ -22,8 +22,9 @@ class VehicleDetailViewController: UIViewController {
   func configureView() {
     // Update the user interface for the detail item.
     if let vehicle = detailVehicle {
-      // TODO: Fill this in.
-      
+        
+        title = vehicle.vehicleTitle
+        detailDescriptionLabel?.text = vehicle.vehicleDetails
     }
   }
   

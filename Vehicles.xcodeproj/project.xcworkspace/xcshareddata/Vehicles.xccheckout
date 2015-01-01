@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>F9C6108C-4C19-474A-8BAB-25BEC106FAA5</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Vehicles</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>A8E8644A8FD99211C2F3796D5C12016C58CBE08D</key>
+		<string>https://github.com/jimtoepel/Vehicles.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Vehicles.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>A8E8644A8FD99211C2F3796D5C12016C58CBE08D</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/jimtoepel/Vehicles.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>A8E8644A8FD99211C2F3796D5C12016C58CBE08D</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>A8E8644A8FD99211C2F3796D5C12016C58CBE08D</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Vehicles</string>
+		</dict>
+	</array>
+</dict>
+</plist>
