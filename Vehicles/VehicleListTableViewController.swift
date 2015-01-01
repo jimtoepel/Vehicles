@@ -14,6 +14,8 @@ class VehicleListTableViewController: UITableViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
+    setupVehicleArray()
+    title = "Vehicles"
   }
   
     
