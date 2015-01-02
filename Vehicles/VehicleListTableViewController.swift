@@ -114,6 +114,34 @@ func setupVehicleArray() {
     vehicles.append(kawasaki)
     
     
+    // first truck
+    var silverado = Truck()
+    silverado.brandName = "Chevrolet"
+    silverado.modelName = "Silverado"
+    silverado.modelYear = 2011
+    silverado.numberOfWheels = 4
+    silverado.cargoCapacityCubicFeet = 53
+    silverado.powerSource = "gas engine"
+    
+    // adding it
+    
+    vehicles.append(silverado)
+    
+    
+    //second truck
+    var eighteenWheeler = Truck()
+    eighteenWheeler.brandName = "Peterbuilt"
+    eighteenWheeler.modelName = "579"
+    eighteenWheeler.modelYear = 2013
+    eighteenWheeler.numberOfWheels = 18
+    eighteenWheeler.cargoCapacityCubicFeet = 408
+    eighteenWheeler.powerSource = "diesel engine"
+    
+    //adding it
+    
+    vehicles.append(eighteenWheeler)
+    
+    
     // sort by model year
     vehicles.sort { $0.modelYear < $1.modelYear }
 

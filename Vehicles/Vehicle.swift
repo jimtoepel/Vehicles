@@ -41,7 +41,7 @@ class Vehicle {
     
     
     func stopMoving() -> String {
-        return "null"
+        return "STOPPED"
     }
     
     
