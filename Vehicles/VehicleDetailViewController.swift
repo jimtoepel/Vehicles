@@ -33,6 +33,15 @@ class VehicleDetailViewController: UIViewController {
     configureView()
   }
 
+    
+  override func viewWillAppear(animated: Bool) {
+    super.viewWillAppear(animated)
+    if let vehicle = detailVehicle {
+        println(vehicle)
+    }
+  }
+    
+    
   @IBAction func goForward(sender: AnyObject) {
     if let vehicle = detailVehicle {
         let controller = UIAlertController.alertControllerWithTitle("Go Forward", message: vehicle.goForward())

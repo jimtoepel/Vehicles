@@ -10,7 +10,7 @@ import Foundation
 
 
 class Truck : Vehicle {
-    var cargoCapacityCubicFeet: Int = 0
+    let cargoCapacityInCubicFeet: Int
     
     override var vehicleDetails: String {
         //get the basic details from the superclass
@@ -20,12 +20,19 @@ class Truck : Vehicle {
         var truckDetailsBuilder = "\n\nTruck-Specific Details:\n\n"
         
         //add info about truck specific features
-        truckDetailsBuilder += "Cargo Capacity: \(cargoCapacityCubicFeet) cubic feet"
+        truckDetailsBuilder += "Cargo Capacity: \(cargoCapacityInCubicFeet) cubic feet"
         
         //create the final string by combining the two
         let truckDetails = basicDetails + truckDetailsBuilder
         
         return truckDetails
+    }
+    
+    
+    init(brandName: String, modelName: String, modelYear: Int, powerSource: String, numberOfWheels: Int, cargoCapacityInCubicFeet: Int) {
+        self.cargoCapacityInCubicFeet = cargoCapacityInCubicFeet
+        super.init(brandName: brandName, modelName: modelName, modelYear: modelYear, powerSource: powerSource, numberOfWheels: numberOfWheels)
+        
     }
     
     
@@ -38,7 +45,7 @@ class Truck : Vehicle {
     
     
     override func goBackward() -> String {
-        if cargoCapacityCubicFeet > 100 {
+        if cargoCapacityInCubicFeet > 100 {
             // sound the alarm first
             return String(format:"Wait for \"%@\", then %@", soundBackupAlarm(), changeGears("Reverse"))
         } else {

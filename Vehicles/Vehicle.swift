@@ -10,11 +10,12 @@ import Foundation
 
 class Vehicle {
     
-    var brandName = "null"
-    var modelName = "null"
-    var modelYear = 0
-    var powerSource = "null"
-    var numberOfWheels = 0
+    let brandName: String
+    let modelName: String
+    let modelYear: Int
+    let powerSource: String
+    let numberOfWheels: Int
+    
     // This is a computed property
     var vehicleTitle: String {
         return String(format:"%d %@ %@", modelYear, brandName, modelName)
@@ -27,6 +28,16 @@ class Vehicle {
         details += "Power source: \(powerSource)\n"
         details += "# of wheels: \(numberOfWheels)\n"
         return details
+    }
+    
+    // Initialization Methods!
+    
+    init (brandName: String, modelName: String, modelYear: Int, powerSource:String, numberOfWheels:Int) {
+        self.brandName = brandName
+        self.modelName = modelName
+        self.modelYear = modelYear
+        self.powerSource = powerSource
+        self.numberOfWheels = numberOfWheels
     }
     
     
@@ -71,6 +82,12 @@ class Vehicle {
 
     
     
+    
 }
 
-
+// make an extension to Vehicle printable
+extension Vehicle : Printable {
+    var description:String {
+        return vehicleTitle + "\n" + vehicleDetails
+    }
+}
